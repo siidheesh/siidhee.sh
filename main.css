@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    background-image: radial-gradient( rgba(35, 39, 41, 0.75), black 120%);
+    margin: 0;
+    padding: 2rem;
+    color: rgb(238, 238, 236);
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3rem;
+    text-shadow: 0 0 5px #C8C8C8;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient( 0deg, rgba(black, 0.15), rgba(black, 0.15) 1px, transparent 1px, transparent 2px);
+}
+
+.blue {
+    color: rgb(114, 159, 207);
+}
+
+.green {
+    color: rgb(138, 226, 52);
+}
+
+.error {
+    color: transparent;
+    text-shadow: 0 0 3px rgba(194, 15, 10, 0.9);
+}
+
+.strike {
+    text-decoration: line-through;
+    color: rgba(194, 15, 10, 0.9);
+}
+
+ ::selection {
+    background: #0080FF;
+    text-shadow: none;
+}
+
+pre {
+    margin: 0;
+}
+
+pre:after {
+    content: "_";
+    animation: blink 500ms linear infinite alternate;
+}
+
+a {
+    color: cyan;
+    text-decoration: inherit;
+}
+
+blur {
+    color: transparent;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.75);
+}
+
+img {
+    width: 20px;
+    height: 25px;
+    vertical-align: middle;
+}
